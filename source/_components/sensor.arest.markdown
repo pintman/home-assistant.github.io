@@ -46,7 +46,7 @@ Configuration variables:
     - **unit_of_measurement** (*Optional*): Defines the unit of measurement of the sensor, if any.
     - **value_template** (*Optional*): Defines a [template](/docs/configuration/templating/#processing-incoming-data) to extract a value from the payload.
 
-The variables in the `monitored_variables` array must be available in the response of the device. As a starting point you could use the one of the example sketches (eg.  [Ethernet](https://raw.githubusercontent.com/marcoschwartz/aREST/master/examples/Ethernet/Ethernet.ino) for an Arduino with Ethernet shield). In those sketches are two variables (`temperature` and `humidity`) available which will act as endpoints. 
+The variables in the `monitored_variables` array must be available in the response of the device. As a starting point you could use one of the example sketches (eg.  [Ethernet](https://raw.githubusercontent.com/marcoschwartz/aREST/master/examples/Ethernet/Ethernet.ino) for an Arduino with Ethernet shield). In those sketches are two variables (`temperature` and `humidity`) available which will act as endpoints. 
 
 Accessing one of the endpoints (eg. http://192.168.1.10/temperature) will give you the value inside a JSON response.
 
